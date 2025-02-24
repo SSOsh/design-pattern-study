@@ -15,4 +15,14 @@ public class StrategyController {
     public String executeCancellationStrategy() {
         return strategyService.useCancellationStrategy();
     }
+
+    @GetMapping("/exchange")
+    public String executeExchangeStrategy() {
+        return strategyService.useExchangeStrategy();
+    }
+
+    @GetMapping("/returning")
+    public String executeReturningStrategy() {
+        return strategyService.useReturningStrategy();
+    }
 }
