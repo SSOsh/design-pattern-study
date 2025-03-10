@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component("Handler")
 @Slf4j
 public abstract class DefaultHandler {
     abstract void process(User user) throws Exception;
